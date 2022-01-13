@@ -146,3 +146,28 @@ main{
     background-color: #FFE4E8;
     padding: 5px;
 }
+/* Mobile-Screen */
+@media only screen and (max-width:668px){
+    .container{
+        width: 100%;
+    }
+    .players .blogs .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player .blog{
+        flex-direction: column;
+    }
+    
+}
+/* Ipad-Screen */
+@media only screen and (min-width:668px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    .players .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
